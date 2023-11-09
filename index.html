@@ -1,92 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Jane Doe's Portfolio</title>
 </head>
-<body data-theme="light">
-    <header>
-        <button id="themeToggle">Toggle Dark Mode</button>
-    </header>
 
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Your about content goes here...</p>
-    </section>
+<body>
+	<img id="profile_pic" src="assets/profile.jpg" alt="Jane Doe">
 
-    <section id="blog">
-        <h1>Blog</h1>
-        <p>Your blog content goes here...</p>
-    </section>
+	<h1>Jane Doe</h1>
 
-    <section id="publications">
-        <h1>Publications</h1>
-        <p>Your publications content goes here...</p>
-    </section>
+	<h3>
+	<a href="assets/resume.pdf">resume</a>
+	| <a href="https://scholar.google.com/">scholar</a>
+	| <a href="https://github.com/janedoe">github</a>
+	| <a href="mailto:jane.doe@example.com">email</a>
+	</h3>
 
-    <section id="cv">
-        <h1>CV</h1>
-        <p>Your CV content goes here or link to a downloadable CV...</p>
-    </section>
+	<br>
 
-    <section id="links">
-        <h1>Links</h1>
-        <p>Your important links go here...</p>
-    </section>
+	<p>
+	I am a graduate student in Applied Mathematics at the University of Imaginaria. I have spent the past year delving into mathematical modeling with Prof. John Smith at the Imaginaria Research Institute. Previously, I completed my undergraduate studies at the Academy of Science, where I collaborated with Profs. Anna Belle, Charles Xavier, and Linus Stone on various research projects. My interests lie in the intersection of mathematics and computer science, with a focus on algorithmic efficiency and data visualization.
+	</p>
 
-    <footer>
-        <p>© 2023 Your Name. Hosted on GitHub Pages.</p>
-    </footer>
+	<h2>news</h2>
+
+	<table>
+	<tr>
+		<th>October 2023</th>
+		<td>Presented at the Global Math Conference</td>
+	</tr>
+
+	<tr>
+		<th>August 2023</th>
+		<td>My new research paper was published in the Journal of Imaginary Mathematics</td>
+	</tr>
+	</table>
+
+	<h2>publications</h2>
+
+	(&ast; denotes equal contribution)
+
+	<ol>
+	<li>
+		<b>Numerical Methods for Efficient Data Analysis</b><br>
+		Jane Doe&ast;, Anna Belle&ast;<br>
+		<i>Journal of Imaginary Mathematics, 2023</i><br>
+
+		<a href="assets/2023_jim_numericalmethods/paper.pdf">paper</a>
+		| <a href="https://arxiv.org/">arxiv</a>
+		| <a href="assets/2023_jim_numericalmethods/poster.pdf">poster</a>
+		| <a href="assets/2023_jim_numericalmethods/slides.pdf">slides</a>
+		| <a href="https://github.com/janedoe/numerical-methods">code</a>
+		| <a href="assets/2023_jim_numericalmethods/cite.txt">cite</a>
+	</li>
+
+	<li>
+		<b>Visualizing Multidimensional Data with Novel Algorithms</b><br>
+		Jane Doe, Charles Xavier<br>
+		<i>Proceedings of the Applied Mathematics Symposium, 2023</i><br>
+
+		<a href="assets/2023_ams_vmdna/paper.pdf">paper</a>
+		| <a href="https://arxiv.org/">arxiv</a>
+		| <a href="assets/2023_ams_vmdna/poster.pdf">poster</a>
+		| <a href="assets/2023_ams_vmdna/slides.pdf">slides</a>
+		| <a href="https://github.com/janedoe/vmdna">code</a>
+		| <a href="assets/2023_ams_vmdna/cite.txt">cite</a>
+	</li>
+	</ol>
+
+	<footer>
+		Made with <3 in HTML and CSS (<a href="https://github.com/janedoe/janedoe.github.io">code</a>).
+	<footer>
 </body>
+
 </html>
-
-
-/* Default light theme styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-header, footer {
-    background-color: #333;
-    color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-}
-
-button {
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-}
-
-/* Dark theme styles */
-body[data-theme='dark'] {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-body[data-theme='dark'] header, body[data-theme='dark'] footer {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-document.getElementById('themeToggle').addEventListener('click', function() {
-    let currentTheme = document.body.getAttribute('data-theme');
-    if (currentTheme === 'light') {
-        document.body.setAttribute('data-theme', 'dark');
-    } else {
-        document.body.setAttribute('data-theme', 'light');
-    }
-});
-
